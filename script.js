@@ -30,7 +30,7 @@ function noBoxFunction() {
 
 }
 
-submitButton.addEventListener("click", () => {
+submitButton.addEventListener("click", async () => {
 
     nameVar = nameInput.value; 
 
@@ -56,10 +56,8 @@ submitButton.addEventListener("click", () => {
                 NumVeg: noVeg})
         
     })
-    .then(res => res.json)
+    .then(res => res.json())
     .then(data => {
         console.log("Yey!")
     })
-
-
 })

@@ -1,5 +1,8 @@
 [
     {
-        
+        "name" : "nameVar",
+        "response" : "coming", 
+        "numMeat" : "noMeat", 
+        "NumVeg" : "noVeg"
     }
 ]
