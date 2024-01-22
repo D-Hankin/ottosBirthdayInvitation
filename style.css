@@ -110,7 +110,6 @@ label, select {
     text-align: right;
 }
 
-/* Base styles for the button */
 button {
     margin-top: 3%;
     display: inline-block;
@@ -126,25 +125,20 @@ button {
     color: yellow;
 }
 
-/* Primary color for the button */
 button-primary {
-    background-color: #3498db; /* Use your primary color */
-    color: #ffffff; /* Text color */
+    background-color: #3498db;
+    color: #ffffff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover effect for the button */
+
 button:hover {
-    background-color: #2980b9; /* Darken the background color on hover */
-    color: #ffffff; /* Text color on hover */
-}
-
-/* Add more styles to make it fun and vibrant */
-button-primary {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-color: #2980b9;
+    color: #ffffff;
 }
 
 button-primary:active {
-    transform: translateY(2px); /* Add a slight downward movement on click */
+    transform: translateY(2px);
 }
  
 #name {
