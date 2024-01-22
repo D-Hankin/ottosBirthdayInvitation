@@ -14,5 +14,66 @@
     <div id="h1">
         <h1>Otto Mohlin</h1>
     </div>
+    <div id="timeAndPlace">
+        <table id="timeAndPlaceTable">
+            <thead id="thead">
+                <tr id="tr">
+                    <th id="td">Var?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Äspövägen 509, 23199<br>Klagstorp</td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th>När?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lördag 17de februari, kl16-19</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="foodFormContainer">
+        <form id="foodForm">
+            <div id="rsvpDiv">
+                <input id="name" type="text" placeholder="Namn">
+                <label id="yes" for="yesBox">Naturligvis kommer vi. Självklart : </label>
+                <input id="yesBox" type="radio" onclick="yesBoxFunction()"> 
+                <label id="no" for="noBox">Tyvärr är vi tråkiga och har<br> mycket sämre planer den dagen : </label>
+                <input id="noBox" type="radio" onclick="noBoxFunction()">
+            </div>
+            <div id="menu">
+                <span id="span">Det kommer serveras hamburgare och pommes till båda de större och de små. Vänligen gör dina beställningar nedan</span>
+                <div id="meatDiv">
+                    <label id="noOfMeatLabel" for="noOfMeatMenu">Antal kött: </label>
+                    <select id="noOfMeatMenu" name="dropdownMeat">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div id="vegDiv">
+                    <label id="noOfVegLabel" for="noOfVegMenu">Antal vegetariska: </label>
+                    <select id="noOfVegMenu" name="dropdownVeg">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <button id="submitButton" type="submit">Skicka</button>
+        </form>
+    </div>
 </body>
 </html>

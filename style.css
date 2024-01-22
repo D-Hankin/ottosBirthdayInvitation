@@ -56,7 +56,97 @@
 }
 
 body, html {
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
+}
+
+#timeAndPlace {
+    max-width: 95vw;
+    text-align: center;
+    margin: auto;
+    background-color: red;
+    color: yellow;
+    border-radius: 10px;
+}
+
+#timeAndPlaceTable {
+    font-family: 'fuzzy';
+    margin: auto;
+    font-size: large;
+}
+
+th {
+    padding-top: 2%;
+}
+
+#foodFormContainer {
+    max-width: 95vw;
+    text-align: center;
+    margin: auto;
+    margin-top: 4%;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#foodForm {
+    font-family: 'fuzzy';
+    color: red;
+    font-weight: bolder;
+    padding: 2%;
+}
+
+#span {
+    padding: 3%;
+    display: block;
+}
+
+label, select {
+    display: inline-block;
+}
+
+#meatDiv, #vegDiv {
+    width: 70%;
+    text-align: right;
+}
+
+/* Base styles for the button */
+button {
+    margin-top: 3%;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: blue;
+    color: yellow;
+}
+
+/* Primary color for the button */
+button-primary {
+    background-color: #3498db; /* Use your primary color */
+    color: #ffffff; /* Text color */
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #2980b9; /* Darken the background color on hover */
+    color: #ffffff; /* Text color on hover */
+}
+
+/* Add more styles to make it fun and vibrant */
+button-primary {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+button-primary:active {
+    transform: translateY(2px); /* Add a slight downward movement on click */
+}
+ 
+#name {
+    margin: 4% 0 4% 0;
 }
