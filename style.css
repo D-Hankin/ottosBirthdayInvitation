@@ -3,6 +3,10 @@
     max-width: 100%;
     margin: auto;
     text-align: center;
+    font-size: 150%;
+    background-color: blue;
+    color: yellow;
+    border-radius: 10px;
 }
 
 #h2 {
@@ -10,15 +14,18 @@
     max-width: 100%;
     margin: auto;
     align-items: center;
+    background-color: yellow;
+    color: blue;
+    border-radius: 10px;
 }
 
 #h2Text {
-    max-width: 100%;
+    max-width: 90%;
     text-align: center;
 }
 
-#body {
-    background-image: url("images/background.jpg");
+body {
+    background-image: url("images/background2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
