@@ -39,13 +39,14 @@
         </table>
     </div>
     <div id="foodFormContainer">
-        <form id="foodForm">
+        <form id="foodForm" action="https://formspree.io/f/xoqgjjqz"
+        method="POST">
             <div id="rsvpDiv">
-                <input id="name" type="text" placeholder="Namn">
+                <input id="name" type="text" placeholder="Namn" name="name">
                 <label id="yes" for="yesBox">Naturligvis kommer vi. Självklart : </label>
-                <input id="yesBox" type="radio" onclick="yesBoxFunction()"> 
+                <input id="yesBox" type="radio" name="coming" onclick="yesBoxFunction()"> 
                 <label id="no" for="noBox">Tyvärr är vi tråkiga och har<br> mycket sämre planer den dagen : </label>
-                <input id="noBox" type="radio" onclick="noBoxFunction()">
+                <input id="noBox" type="radio" name="notComing" onclick="noBoxFunction()">
             </div>
             <div id="menu">
                 <span id="span">Det kommer serveras hamburgare och pommes till båda de större och de små. Vänligen gör dina beställningar nedan</span>
