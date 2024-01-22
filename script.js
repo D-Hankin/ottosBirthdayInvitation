@@ -44,20 +44,5 @@ submitButton.addEventListener("click", async () => {
     let noVeg = noOfVegSelect.value;
 
     console.log(nameVar + " " + coming + " " + noMeat + " " + noVeg);
-
-    fetch(".vscode/responses.json", {
-        method : "POST",
-        headers : {
-            "Content-Type" : "application/json"},
-            body:JSON.stringify(
-                {name : nameVar,
-                response: coming, 
-                NumMeat: noMeat, 
-                NumVeg: noVeg})
-        
-    })
-    .then(res => res.json())
-    .then(data => {
-        console.log("Yey!")
-    })
+    
 })
