@@ -42,35 +42,42 @@
         <form id="foodForm" action="https://formspree.io/f/xoqgjjqz"
         method="POST">
             <div id="rsvpDiv">
-                <input id="name" type="text" placeholder="Namn" name="name">
-                <label id="yes" for="yesBox">Naturligvis kommer vi. Självklart : </label>
-                <input id="yesBox" type="radio" name="coming" onclick="yesBoxFunction()"> 
-                <label id="no" for="noBox">Tyvärr är vi tråkiga och har<br> mycket sämre planer den dagen : </label>
-                <input id="noBox" type="radio" name="notComing" onclick="noBoxFunction()">
+                <h2 id="rsvp">RSVP</h2>
+                <input id="name" type="text" placeholder="Namn" name="name" autocomplete="additional-name">
+                <div id="coming">
+                    <label id="yes" for="yesBox">Naturligvis kommer vi. Självklart : </label>
+                    <input id="yesBox" type="radio" name="coming" onclick="yesBoxFunction()"> 
+                </div>
+                <div id="notComing">
+                    <label id="no" for="noBox">Tyvärr är vi tråkiga och har<br> mycket sämre planer den dagen : </label>
+                    <input id="noBox" type="radio" name="notComing" onclick="noBoxFunction()">
+                </div>
             </div>
             <div id="menu">
                 <span id="span">Det kommer serveras hamburgare och pommes till båda de större och de små. Vänligen gör dina beställningar nedan</span>
-                <div id="meatDiv">
-                    <label id="noOfMeatLabel" for="noOfMeatMenu">Antal kött: </label>
-                    <select id="noOfMeatMenu" name="dropdownMeat">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-                <div id="vegDiv">
-                    <label id="noOfVegLabel" for="noOfVegMenu">Antal vegetariska: </label>
-                    <select id="noOfVegMenu" name="dropdownVeg">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
+                <div id="selectionMenus">
+                    <div id="meatDiv">
+                        <label id="noOfMeatLabel" for="noOfMeatMenu">Antal kött: </label>
+                        <select id="noOfMeatMenu" name="dropdownMeat">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div id="vegDiv">
+                        <label id="noOfVegLabel" for="noOfVegMenu">Antal vegetariska: </label>
+                        <select id="noOfVegMenu" name="dropdownVeg">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <button id="submitButton" type="submit">Skicka</button>

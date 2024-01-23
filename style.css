@@ -96,6 +96,9 @@ th {
     padding: 2%;
 }
 
+#menu {
+    text-align: center;
+}
 #span {
     padding: 3%;
     display: block;
@@ -106,8 +109,8 @@ label, select {
 }
 
 #meatDiv, #vegDiv {
-    width: 70%;
-    text-align: right;
+    width: 100%;
+    text-align: center;
 }
 
 button {
@@ -142,5 +145,25 @@ button-primary:active {
 }
  
 #name {
-    margin: 4% 0 4% 0;
+    margin: 4% auto 4% auto;
+    display: block;
+
+}
+
+#coming {
+    margin-bottom: 2%;
+}
+
+#selectionMenus {
+    text-align: left;
+}
+
+#noOfMeatLabel {
+    margin-right: 55px;
+}
+
+@media only screen and (max-width: 325px) {
+    #yes, #no {
+        font-size: 75%;
+    } 
 }

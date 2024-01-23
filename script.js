@@ -25,7 +25,8 @@ function noBoxFunction() {
 
 
     }
-
+    noOfMeatSelect.value = 0;
+    noOfVegSelect.value = 0;
     menu.style.display = "none";
 
 }
