@@ -1,20 +1,24 @@
 @font-face {
     font-family: 'grinch';
-    src: url('fonts/GrinchedRegular.otf');
+    src: url('fonts/GrinchedRegular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-    
 }
 
 @font-face {
     font-family: 'fuzzy';
-    src: url('fonts/FuzzyBubbles-Regular.ttf');
+    src: url('fonts/FuzzyBubbles-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 
-#h1{
+body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#h1 {
     font-family: 'grinch';
     max-width: 95vw;
     margin: auto;
@@ -34,7 +38,6 @@
     color: blue;
     border-radius: 10px;
     text-align: center;
-
 }
 
 #h2Text {
@@ -53,12 +56,6 @@
     height: 100vh;
     width: 100%;
     max-width: 100vw; 
-}
-
-body, html {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
 }
 
 #timeAndPlace {
@@ -99,6 +96,7 @@ th {
 #menu {
     text-align: center;
 }
+
 #span {
     padding: 3%;
     display: block;
@@ -126,28 +124,22 @@ button {
     transition: background-color 0.3s ease, color 0.3s ease;
     background-color: blue;
     color: yellow;
-}
-
-button-primary {
-    background-color: #3498db;
     color: #ffffff; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 
 button:hover {
     background-color: #2980b9;
     color: #ffffff;
 }
 
-button-primary:active {
+button:active {
     transform: translateY(2px);
 }
- 
+
 #name {
     margin: 4% auto 4% auto;
     display: block;
-
 }
 
 #coming {
